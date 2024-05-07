@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropType from "prop-types";
 function LinkButton({ to, children }) {
   return (
     <Link
@@ -11,3 +12,8 @@ function LinkButton({ to, children }) {
 }
 
 export default LinkButton;
+
+LinkButton.proptypes = {
+  to: PropType.string,
+  children: PropType.string,
+};
